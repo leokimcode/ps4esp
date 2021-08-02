@@ -7,7 +7,7 @@ DISPLAY_W, DISPLAY_H = 960, 570
 canvas = pygame.Surface((DISPLAY_W,DISPLAY_H))
 window = pygame.display.set_mode(((DISPLAY_W,DISPLAY_H)))
 running = True
-player = pygame.Rect(DISPFLAY_W/2, DISPLAY_H/2, 60,60)
+player = pygame.Rect(DISPLAY_W/2, DISPLAY_H/2, 60,60)
 LEFT, RIGHT, UP, DOWN = False, False, False, False
 clock = pygame.time.Clock()
 color = 0
@@ -54,16 +54,12 @@ while running:
         if event.type == pygame.JOYBUTTONUP:
             if event.button == button_keys['left_arrow']:
                 LEFT = False
-                print("left button released")
             if event.button == button_keys['right_arrow']:
                 RIGHT = False
-                print("right button released")
             if event.button == button_keys['down_arrow']:
                 DOWN = False
-                print("down button released")
             if event.button == button_keys['up_arrow']:
                 UP = False
-                print("up button released")
 
         #HANDLES ANALOG INPUTS
         if event.type == pygame.JOYAXISMOTION:
