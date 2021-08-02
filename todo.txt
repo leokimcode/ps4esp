@@ -1,0 +1,12 @@
+1) receive input from ps4 controller python
+	- find library
+	- guide
+	- conver the input to the desired format
+
+2) send to the esp
+	-udp/tcp to send
+
+3) how to receive
+	- figure out how to receive
+	- process the input
+	- convert into controlling the motor
